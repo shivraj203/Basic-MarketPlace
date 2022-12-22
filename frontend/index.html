@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic MarketPlace</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Basic MarketPlace</h1>
+    <div id="wallet"></div>
+    <div>
+        <h2>Add New Item</h2>
+        <div>
+            <input type="text" id="new_itemname" placeholder="Item Name.." />
+            <input type="text" id="new_askingprice" placeholder="Asking Price.." />
+            <div>
+                <button type="button" class="btn_add">Add Item</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>All Items</h2>
+        <div id="addItems">
+            <!-- Load All Items Here-->
+        </div>
+        <div id="itemTemplate" style="display: none;">
+            <div class="card">
+                <div class="container">
+                    <strong>Item Name</strong>: <span class="itemName"></span></br>
+                    <strong>Item Creator</strong>: <span class="itemCreator"></span></br>
+                    <strong>Item Owner</strong>: <span class="itemOwner"></span></br>
+                    <strong>Asking Price</strong>: <span class="askingPrice"></span></br>
+                    <strong>Item Status</strong>: <span class="itemStatus"></span></br>
+                    <button type="button" class="buy_btn" data-id="0">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
